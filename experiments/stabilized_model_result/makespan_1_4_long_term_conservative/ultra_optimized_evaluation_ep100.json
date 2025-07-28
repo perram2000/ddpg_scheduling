@@ -1,0 +1,76 @@
+{
+  "episode": 100,
+  "recent_performance": {
+    "avg_reward": 1256.8658610178923,
+    "std_reward": 100.76651490229838,
+    "avg_makespan": 1.6353686679906712,
+    "std_makespan": 0.15554806108739594,
+    "avg_load_balance": 1.9259432812627246,
+    "reward_trend": 3.9686432801313067,
+    "makespan_stability": 0.9763763789125406
+  },
+  "optimization_status": {
+    "episode": 100,
+    "makespan_trend": 0.0010230885349447254,
+    "makespan_variance": 0.026431413929504516,
+    "stability_score": 0.9237155764063096,
+    "current_exploration_noise": 0.009512175302423346,
+    "trend_direction": "stable",
+    "stagnation_counter": 0,
+    "buffer_utilization": 0.62475,
+    "optimization_progress": {
+      "improving": "False",
+      "stable": "True",
+      "converged": 0
+    },
+    "current_lr": 8e-07,
+    "convergence_monitor": {
+      "early_stop": 0,
+      "best_score": 1.2474330002946439,
+      "patience_counter": 22,
+      "improvement_trend": 0
+    }
+  },
+  "buffer_status": {
+    "buffer_sizes": {
+      "meta": 6681,
+      "FPGA": 582,
+      "FOG_GPU": 3333,
+      "CLOUD": 1899
+    },
+    "capacity_utilization": {
+      "meta": 0.6681,
+      "FPGA": 0.17461746174617462,
+      "FOG_GPU": 1.0,
+      "CLOUD": 0.5697569756975698
+    },
+    "quality_stats": {
+      "total_experiences": 13362,
+      "filtered_experiences": 0,
+      "filter_rate": 0.0,
+      "meta_avg_quality": 0.9991075278043439,
+      "sub_avg_qualities": {
+        "FPGA": 0.9835853747618344,
+        "FOG_GPU": 0.998794509435078,
+        "CLOUD": 0.9835307409253011
+      }
+    },
+    "sampling_stats": {
+      "meta_samples": 100,
+      "sub_samples": {
+        "FPGA": 100,
+        "FOG_GPU": 100,
+        "CLOUD": 100
+      },
+      "quality_filtered": 0,
+      "last_sample_time": 1753690094.7065697
+    },
+    "configuration": {
+      "enable_per": 1,
+      "quality_threshold": 0.08,
+      "balance_sampling": 1
+    }
+  },
+  "evaluation_duration": 0.0010361671447753906,
+  "timestamp": "2025-07-28T16:08:14.916863"
+}

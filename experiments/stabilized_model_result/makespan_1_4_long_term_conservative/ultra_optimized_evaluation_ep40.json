@@ -1,0 +1,76 @@
+{
+  "episode": 40,
+  "recent_performance": {
+    "avg_reward": 1182.6587985177928,
+    "std_reward": 100.61262324288005,
+    "avg_makespan": 1.7239850211380037,
+    "std_makespan": 0.20799764808130092,
+    "avg_load_balance": 1.9258060576252014,
+    "reward_trend": -1.5175013707103149,
+    "makespan_stability": 0.9585310504529362
+  },
+  "optimization_status": {
+    "episode": 40,
+    "makespan_trend": 0.0014659917131254689,
+    "makespan_variance": 0.043347837551891984,
+    "stability_score": 0.9600485332932692,
+    "current_exploration_noise": 0.009801937706913745,
+    "trend_direction": "stable",
+    "stagnation_counter": 1,
+    "buffer_utilization": 0.2632,
+    "optimization_progress": {
+      "improving": "False",
+      "stable": "True",
+      "converged": 0
+    },
+    "current_lr": 8e-07,
+    "convergence_monitor": {
+      "early_stop": 0,
+      "best_score": 1.3678386039354655,
+      "patience_counter": 38,
+      "improvement_trend": 0
+    }
+  },
+  "buffer_status": {
+    "buffer_sizes": {
+      "meta": 2632,
+      "FPGA": 320,
+      "FOG_GPU": 1748,
+      "CLOUD": 564
+    },
+    "capacity_utilization": {
+      "meta": 0.2632,
+      "FPGA": 0.096009600960096,
+      "FOG_GPU": 0.5244524452445245,
+      "CLOUD": 0.1692169216921692
+    },
+    "quality_stats": {
+      "total_experiences": 5264,
+      "filtered_experiences": 0,
+      "filter_rate": 0.0,
+      "meta_avg_quality": 0.9986874502112095,
+      "sub_avg_qualities": {
+        "FPGA": 0.9806173986720147,
+        "FOG_GPU": 0.9988849976218117,
+        "CLOUD": 0.983807951716659
+      }
+    },
+    "sampling_stats": {
+      "meta_samples": 40,
+      "sub_samples": {
+        "FPGA": 40,
+        "FOG_GPU": 40,
+        "CLOUD": 40
+      },
+      "quality_filtered": 0,
+      "last_sample_time": 1753690005.3691258
+    },
+    "configuration": {
+      "enable_per": 1,
+      "quality_threshold": 0.08,
+      "balance_sampling": 1
+    }
+  },
+  "evaluation_duration": 0.0,
+  "timestamp": "2025-07-28T16:06:45.575128"
+}

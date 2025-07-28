@@ -1,0 +1,17 @@
+{
+  "total_episodes": 2,
+  "average_reward_recent_100": -23.755272255610507,
+  "average_makespan_recent_100": Infinity,
+  "average_load_balance_recent_100": 0.4314157781027743,
+  "training_history": {
+    "meta_critic_loss": [
+      0,
+      0
+    ],
+    "meta_actor_loss": [
+      0,
+      0
+    ],
+    "sub_critic_losses": {
+      "FPGA": [
+        

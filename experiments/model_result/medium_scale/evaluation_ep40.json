@@ -1,0 +1,12 @@
+{
+  "episode": 40,
+  "recent_performance": {
+    "avg_reward": 178.9662651008054,
+    "std_reward": 23.27103417281497,
+    "avg_makespan": 1.3152029105721479,
+    "std_makespan": 0.2620763101248923,
+    "avg_load_balance": 1.0171148997440629,
+    "std_load_balance": 0.02319195822180406
+  },
+  "timestamp": "2025-07-25T19:23:32.568322"
+}

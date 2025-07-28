@@ -1,0 +1,76 @@
+{
+  "episode": 15,
+  "recent_performance": {
+    "avg_reward": 1149.6020695511218,
+    "std_reward": 67.25060533236888,
+    "avg_makespan": 1.9840359504796854,
+    "std_makespan": 0.1301808180035425,
+    "avg_load_balance": 1.9519200724639296,
+    "reward_trend": -2.749791442088791,
+    "makespan_stability": 0.9833353708503039
+  },
+  "optimization_status": {
+    "episode": 15,
+    "makespan_trend": -0.010507324138298675,
+    "makespan_variance": 0.01694704537607146,
+    "stability_score": 0.9795536786626802,
+    "current_exploration_noise": 0.009925261932102197,
+    "trend_direction": "stable",
+    "stagnation_counter": 1,
+    "buffer_utilization": 0.16333333333333333,
+    "optimization_progress": {
+      "improving": "True",
+      "stable": "True",
+      "converged": 0
+    },
+    "current_lr": 1.6e-06,
+    "convergence_monitor": {
+      "early_stop": 0,
+      "best_score": 1.6572701644507197,
+      "patience_counter": 2,
+      "improvement_trend": 0
+    }
+  },
+  "buffer_status": {
+    "buffer_sizes": {
+      "meta": 980,
+      "FPGA": 228,
+      "FOG_GPU": 528,
+      "CLOUD": 224
+    },
+    "capacity_utilization": {
+      "meta": 0.16333333333333333,
+      "FPGA": 0.114,
+      "FOG_GPU": 0.264,
+      "CLOUD": 0.112
+    },
+    "quality_stats": {
+      "total_experiences": 1960,
+      "filtered_experiences": 0,
+      "filter_rate": 0.0,
+      "meta_avg_quality": 0.9976279189777081,
+      "sub_avg_qualities": {
+        "FPGA": 0.9828400432945253,
+        "FOG_GPU": 0.9986957534097528,
+        "CLOUD": 0.9863894649840818
+      }
+    },
+    "sampling_stats": {
+      "meta_samples": 15,
+      "sub_samples": {
+        "FPGA": 15,
+        "FOG_GPU": 15,
+        "CLOUD": 15
+      },
+      "quality_filtered": 0,
+      "last_sample_time": 1753689721.5469778
+    },
+    "configuration": {
+      "enable_per": 1,
+      "quality_threshold": 0.08,
+      "balance_sampling": 1
+    }
+  },
+  "evaluation_duration": 0.0009810924530029297,
+  "timestamp": "2025-07-28T16:02:01.753914"
+}

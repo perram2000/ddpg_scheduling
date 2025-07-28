@@ -1,0 +1,33 @@
+{
+  "total_episodes": 1,
+  "average_reward_recent_100": 2.6995230416660085,
+  "average_makespan_recent_100": Infinity,
+  "average_load_balance_recent_100": 0.47149089173393977,
+  "training_history": {
+    "meta_critic_loss": [
+      0
+    ],
+    "meta_actor_loss": [
+      0
+    ],
+    "sub_critic_losses": {
+      "FPGA": [],
+      "FOG_GPU": [],
+      "CLOUD": []
+    },
+    "sub_actor_losses": {
+      "FPGA": [],
+      "FOG_GPU": [],
+      "CLOUD": []
+    },
+    "episode_rewards": [
+      2.6995230416660085
+    ],
+    "makespans": [
+      Infinity
+    ],
+    "load_balances": [
+      0.47149089173393977
+    ]
+  }
+}

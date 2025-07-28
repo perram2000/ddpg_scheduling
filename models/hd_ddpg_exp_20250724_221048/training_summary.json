@@ -1,0 +1,71 @@
+{
+  "experiment_id": "hd_ddpg_exp_20250724_221048",
+  "total_episodes": 5,
+  "total_training_time": 3.251713275909424,
+  "average_reward": 30.0,
+  "final_metrics": {
+    "avg_makespan": 2.666670069650769,
+    "avg_load_balance": 0.4954882409839085,
+    "success_rate": 1.0
+  },
+  "episode_rewards": [
+    30.0,
+    30.0,
+    30.0,
+    30.0,
+    30.0
+  ],
+  "training_summary": {
+    "total_episodes": 5,
+    "average_reward_recent_100": 30.0,
+    "average_makespan_recent_100": 2.666670069650769,
+    "average_load_balance_recent_100": 0.4954882409839085,
+    "training_history": {
+      "meta_critic_loss": [
+        1.0871951580047607,
+        1.4606374502182007,
+        0.856235682964325,
+        0.8507900238037109,
+        0.7359621524810791
+      ],
+      "meta_actor_loss": [
+        -0.043863870203495026,
+        -0.09176120162010193,
+        -0.11471696197986603,
+        -0.15236835181713104,
+        -0.13904927670955658
+      ],
+      "sub_critic_losses": {
+        "FPGA": [],
+        "FOG_GPU": [],
+        "CLOUD": []
+      },
+      "sub_actor_losses": {
+        "FPGA": [],
+        "FOG_GPU": [],
+        "CLOUD": []
+      },
+      "episode_rewards": [
+        30.0,
+        30.0,
+        30.0,
+        30.0,
+        30.0
+      ],
+      "makespans": [
+        2.3995077035900425,
+        1.8400558775614904,
+        3.670317996255271,
+        2.565014436878282,
+        2.8584543339687585
+      ],
+      "load_balances": [
+        0.5110797889605244,
+        0.4328368804957959,
+        0.5032879329393074,
+        0.5633874012979604,
+        0.46684920122595425
+      ]
+    }
+  }
+}

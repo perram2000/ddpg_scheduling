@@ -1,0 +1,87 @@
+
+================================================================================
+Ultra-Optimized HD-DDPG Medical Workflow Scheduling Training Log
+Training Start Time: 2025-07-28 16:01:38
+Experiment Directory: stabilized_model_result\makespan_1_4_with_full_loss_tracking
+Training Mode: ULTRA_OPTIMIZED_CPU
+Loss Tracking: ENABLED
+================================================================================
+[2025-07-28 16:01:41] Episode    1 | Reward:  1216.77 | Makespan:   2.20 | LoadBalance: 1.940 | Success: 1.00 | Stability: 1.000 | Quality: 0.863 | LR: 0.000002 | Duration: 1.95s
+[2025-07-28 16:01:43] Episode    2 | Reward:  1073.74 | Makespan:   2.02 | LoadBalance: 1.953 | Success: 1.00 | Stability: 1.000 | Quality: 0.913 | LR: 0.000002 | Duration: 1.38s
+[2025-07-28 16:01:44] Episode    3 | Reward:  1209.87 | Makespan:   2.09 | LoadBalance: 1.964 | Success: 1.00 | Stability: 1.000 | Quality: 0.877 | LR: 0.000002 | Duration: 1.45s
+[2025-07-28 16:01:46] Episode    4 | Reward:  1267.98 | Makespan:   2.00 | LoadBalance: 1.948 | Success: 1.00 | Stability: 1.000 | Quality: 0.884 | LR: 0.000002 | Duration: 1.43s
+[2025-07-28 16:01:47] Episode    5 | Reward:  1193.36 | Makespan:   1.97 | LoadBalance: 1.958 | Success: 1.00 | Stability: 1.000 | Quality: 0.907 | LR: 0.000002 | Duration: 1.42s
+[2025-07-28 16:01:49] Episode    6 | Reward:  1103.72 | Makespan:   1.84 | LoadBalance: 1.957 | Success: 1.00 | Stability: 1.000 | Quality: 0.893 | LR: 0.000002 | Duration: 1.42s
+[2025-07-28 16:01:50] Episode    7 | Reward:  1085.09 | Makespan:   1.88 | LoadBalance: 1.945 | Success: 1.00 | Stability: 1.000 | Quality: 0.863 | LR: 0.000002 | Duration: 1.39s
+[2025-07-28 16:01:51] Episode    8 | Reward:  1017.90 | Makespan:   1.87 | LoadBalance: 1.950 | Success: 1.00 | Stability: 1.000 | Quality: 0.895 | LR: 0.000002 | Duration: 1.40s
+[2025-07-28 16:01:53] Episode    9 | Reward:  1164.89 | Makespan:   2.15 | LoadBalance: 1.952 | Success: 1.00 | Stability: 0.988 | Quality: 0.886 | LR: 0.000002 | Duration: 1.36s
+[2025-07-28 16:01:54] Episode   10 | Reward:  1227.12 | Makespan:   2.10 | LoadBalance: 1.961 | Success: 1.00 | Stability: 0.989 | Quality: 0.894 | LR: 0.000002 | Duration: 1.46s
+[2025-07-28 16:01:56] Episode   11 | Reward:  1090.40 | Makespan:   2.01 | LoadBalance: 1.951 | Success: 1.00 | Stability: 0.987 | Quality: 0.876 | LR: 0.000002 | Duration: 1.40s
+[2025-07-28 16:01:57] Episode   12 | Reward:  1117.92 | Makespan:   2.03 | LoadBalance: 1.944 | Success: 1.00 | Stability: 0.983 | Quality: 0.859 | LR: 0.000002 | Duration: 1.40s
+[2025-07-28 16:01:58] Episode   13 | Reward:  1195.57 | Makespan:   1.66 | LoadBalance: 1.954 | Success: 1.00 | Stability: 0.974 | Quality: 0.873 | LR: 0.000002 | Duration: 1.37s
+[2025-07-28 16:02:00] Episode   14 | Reward:  1113.90 | Makespan:   2.00 | LoadBalance: 1.951 | Success: 1.00 | Stability: 0.978 | Quality: 0.886 | LR: 0.000002 | Duration: 1.35s
+[2025-07-28 16:02:01] Episode   15 | Reward:  1165.80 | Makespan:   1.95 | LoadBalance: 1.950 | Success: 1.00 | Stability: 0.980 | Quality: 0.897 | LR: 0.000002 | Duration: 1.54s
+[2025-07-28 16:02:01] === Episode 15 Performance Evaluation ===
+  avg_reward: 1149.6020695511218
+  std_reward: 67.25060533236888
+  avg_makespan: 1.9840359504796854
+  std_makespan: 0.1301808180035425
+  avg_load_balance: 1.9519200724639296
+  reward_trend: -2.749791442088791
+  makespan_stability: 0.9833353708503039
+=== Evaluation Completed ===
+[2025-07-28 16:02:03] Episode   16 | Reward:  1214.82 | Makespan:   1.77 | LoadBalance: 1.954 | Success: 1.00 | Stability: 0.980 | Quality: 0.859 | LR: 0.000002 | Duration: 1.40s
+[2025-07-28 16:02:04] Episode   17 | Reward:  1159.09 | Makespan:   1.69 | LoadBalance: 1.952 | Success: 1.00 | Stability: 0.981 | Quality: 0.892 | LR: 0.000002 | Duration: 1.37s
+[2025-07-28 16:02:05] Episode   18 | Reward:  1260.24 | Makespan:   1.80 | LoadBalance: 1.964 | Success: 1.00 | Stability: 0.980 | Quality: 0.905 | LR: 0.000002 | Duration: 1.46s
+[2025-07-28 16:02:07] Episode   19 | Reward:  1151.75 | Makespan:   1.69 | LoadBalance: 1.944 | Success: 1.00 | Stability: 0.976 | Quality: 0.877 | LR: 0.000002 | Duration: 1.36s
+[2025-07-28 16:02:08] Episode   20 | Reward:  1262.08 | Makespan:   1.93 | LoadBalance: 1.946 | Success: 1.00 | Stability: 0.975 | Quality: 0.896 | LR: 0.000002 | Duration: 1.48s
+[2025-07-28 16:02:10] Episode   21 | Reward:  1218.29 | Makespan:   1.89 | LoadBalance: 1.959 | Success: 1.00 | Stability: 0.979 | Quality: 0.892 | LR: 0.000002 | Duration: 1.40s
+[2025-07-28 16:02:11] Episode   22 | Reward:  1213.89 | Makespan:   2.05 | LoadBalance: 1.947 | Success: 1.00 | Stability: 0.978 | Quality: 0.876 | LR: 0.000002 | Duration: 1.47s
+[2025-07-28 16:02:13] Episode   23 | Reward:  1365.56 | Makespan:   2.30 | LoadBalance: 1.964 | Success: 1.00 | Stability: 0.962 | Quality: 0.908 | LR: 0.000002 | Duration: 1.46s
+[2025-07-28 16:02:14] Episode   24 | Reward:  1150.94 | Makespan:   2.01 | LoadBalance: 1.959 | Success: 1.00 | Stability: 0.955 | Quality: 0.891 | LR: 0.000002 | Duration: 1.47s
+[2025-07-28 16:02:16] Episode   25 | Reward:  1234.98 | Makespan:   1.85 | LoadBalance: 1.953 | Success: 1.00 | Stability: 0.956 | Quality: 0.890 | LR: 0.000002 | Duration: 1.43s
+[2025-07-28 16:02:18] Episode   26 | Reward:  1242.85 | Makespan:   1.81 | LoadBalance: 1.943 | Success: 1.00 | Stability: 0.963 | Quality: 0.861 | LR: 0.000002 | Duration: 1.46s
+[2025-07-28 16:02:20] Episode   27 | Reward:  1212.95 | Makespan:   2.18 | LoadBalance: 1.945 | Success: 1.00 | Stability: 0.969 | Quality: 0.869 | LR: 0.000002 | Duration: 1.41s
+[2025-07-28 16:02:21] Episode   28 | Reward:  1380.78 | Makespan:   2.22 | LoadBalance: 1.953 | Success: 1.00 | Stability: 0.969 | Quality: 0.897 | LR: 0.000002 | Duration: 1.52s
+[2025-07-28 16:02:23] Episode   29 | Reward:  1165.59 | Makespan:   2.13 | LoadBalance: 1.951 | Success: 1.00 | Stability: 0.963 | Quality: 0.893 | LR: 0.000002 | Duration: 1.48s
+[2025-07-28 16:02:24] Episode   30 | Reward:  1265.81 | Makespan:   1.70 | LoadBalance: 1.964 | Success: 1.00 | Stability: 0.956 | Quality: 0.922 | LR: 0.000002 | Duration: 1.48s
+[2025-07-28 16:02:24] === Episode 30 Performance Evaluation ===
+  avg_reward: 1191.45451881748
+  std_reward: 78.99773001939212
+  avg_makespan: 1.9592308905896756
+  std_makespan: 0.16812673391208638
+  avg_load_balance: 1.9525257579791055
+  reward_trend: 4.361762002333463
+  makespan_stability: 0.9725104377669244
+=== Evaluation Completed ===
+[2025-07-28 16:02:26] Episode   31 | Reward:  1343.19 | Makespan:   2.01 | LoadBalance: 1.969 | Success: 1.00 | Stability: 0.954 | Quality: 0.908 | LR: 0.000002 | Duration: 1.48s
+[2025-07-28 16:02:27] Episode   32 | Reward:  1252.96 | Makespan:   1.76 | LoadBalance: 1.960 | Success: 1.00 | Stability: 0.950 | Quality: 0.904 | LR: 0.000002 | Duration: 1.42s
+[2025-07-28 16:02:28] Episode   33 | Reward:  1232.53 | Makespan:   1.82 | LoadBalance: 1.958 | Success: 1.00 | Stability: 0.945 | Quality: 0.901 | LR: 0.000002 | Duration: 1.43s
+[2025-07-28 16:02:30] Episode   34 | Reward:  1342.22 | Makespan:   2.15 | LoadBalance: 1.929 | Success: 1.00 | Stability: 0.947 | Quality: 0.896 | LR: 0.000002 | Duration: 1.50s
+[2025-07-28 16:02:31] Episode   35 | Reward:  1265.13 | Makespan:   2.05 | LoadBalance: 1.937 | Success: 1.00 | Stability: 0.957 | Quality: 0.858 | LR: 0.000002 | Duration: 1.53s
+[2025-07-28 16:02:33] Episode   36 | Reward:  1454.09 | Makespan:   2.16 | LoadBalance: 1.952 | Success: 1.00 | Stability: 0.961 | Quality: 0.898 | LR: 0.000002 | Duration: 1.53s
+[2025-07-28 16:02:34] Episode   37 | Reward:  1330.72 | Makespan:   1.78 | LoadBalance: 1.956 | Success: 1.00 | Stability: 0.958 | Quality: 0.910 | LR: 0.000002 | Duration: 1.53s
+[2025-07-28 16:02:36] Episode   38 | Reward:  1335.93 | Makespan:   2.29 | LoadBalance: 1.957 | Success: 1.00 | Stability: 0.957 | Quality: 0.903 | LR: 0.000002 | Duration: 1.53s
+[2025-07-28 16:02:38] Episode   39 | Reward:  1273.12 | Makespan:   1.77 | LoadBalance: 1.952 | Success: 1.00 | Stability: 0.964 | Quality: 0.892 | LR: 0.000002 | Duration: 1.55s
+[2025-07-28 16:02:39] Episode   40 | Reward:  1343.89 | Makespan:   1.83 | LoadBalance: 1.957 | Success: 1.00 | Stability: 0.967 | Quality: 0.886 | LR: 0.000002 | Duration: 1.55s
+[2025-07-28 16:02:40] Episode   41 | Reward:  1063.16 | Makespan:   1.82 | LoadBalance: 1.953 | Success: 1.00 | Stability: 0.964 | Quality: 0.874 | LR: 0.000002 | Duration: 1.35s
+[2025-07-28 16:02:42] Episode   42 | Reward:  1212.00 | Makespan:   1.56 | LoadBalance: 1.953 | Success: 1.00 | Stability: 0.954 | Quality: 0.904 | LR: 0.000002 | Duration: 1.45s
+[2025-07-28 16:02:43] Episode   43 | Reward:  1097.90 | Makespan:   1.61 | LoadBalance: 1.956 | Success: 1.00 | Stability: 0.945 | Quality: 0.891 | LR: 0.000002 | Duration: 1.34s
+[2025-07-28 16:02:45] Episode   44 | Reward:  1282.73 | Makespan:   1.99 | LoadBalance: 1.952 | Success: 1.00 | Stability: 0.943 | Quality: 0.909 | LR: 0.000002 | Duration: 1.47s
+[2025-07-28 16:02:46] Episode   45 | Reward:  1358.86 | Makespan:   1.40 | LoadBalance: 1.963 | Success: 1.00 | Stability: 0.954 | Quality: 0.905 | LR: 0.000002 | Duration: 1.49s
+[2025-07-28 16:02:46] === Episode 45 Performance Evaluation ===
+  avg_reward: 1256.2681301891955
+  std_reward: 86.57812749700739
+  avg_makespan: 1.89995876901148
+  std_makespan: 0.21853822950227936
+  avg_load_balance: 1.95334360733166
+  reward_trend: 2.0168263797322123
+  makespan_stability: 0.9544179914659298
+=== Evaluation Completed ===
+[2025-07-28 16:02:48] Episode   46 | Reward:  1283.37 | Makespan:   1.72 | LoadBalance: 1.955 | Success: 1.00 | Stability: 0.967 | Quality: 0.921 | LR: 0.000002 | Duration: 1.43s
+[2025-07-28 16:02:49] Episode   47 | Reward:  1527.98 | Makespan:   1.89 | LoadBalance: 1.950 | Success: 1.00 | Stability: 0.976 | Quality: 0.908 | LR: 0.000002 | Duration: 1.65s
+[2025-07-28 16:02:51] Episode   48 | Reward:  1215.78 | Makespan:   1.58 | LoadBalance: 1.964 | Success: 1.00 | Stability: 0.978 | Quality: 0.922 | LR: 0.000002 | Duration: 1.46s
+[2025-07-28 16:02:52] Episode   49 | Reward:  1419.44 | Makespan:   2.11 | LoadBalance: 1.955 | Success: 1.00 | Stability: 0.974 | Quality: 0.900 | LR: 0.000002 | Duration: 1.58s
+[2025-07-28 16:02:54] Episode   50 | Reward:  1176.39 | Makespan:   1.79 | LoadBalance: 1.959 | Success: 1.00 | Stability: 0.970 | Quality: 0.929 | LR: 0.000002 | Duration: 1.42s
+[2025-07-28 16:02:56] Episode   51 | Reward:  1145.08 | Makespan:   1.47 | LoadBalance: 1.951 | Success: 1.00 | Stability: 0.966 | Quality: 0.896 | LR: 0.000002 | Duration: 1.44s
+[2025-07-28 16:02:58] Episode   52 | Reward:  1419.65 | Makespan:   1.92 | LoadBalance: 1.959 | Success: 1.00 | Stability: 0.968 | Quality: 0.920 | LR: 0.000002 | Duration: 1.60s

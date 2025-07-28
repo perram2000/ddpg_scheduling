@@ -1,0 +1,76 @@
+{
+  "episode": 120,
+  "recent_performance": {
+    "avg_reward": 1296.6698321562362,
+    "std_reward": 110.84193230968366,
+    "avg_makespan": 1.6157023681135911,
+    "std_makespan": 0.15302222962665402,
+    "avg_load_balance": 1.9259748375532355,
+    "reward_trend": 0.7034757032871162,
+    "makespan_stability": 0.9771199519327671
+  },
+  "optimization_status": {
+    "episode": 120,
+    "makespan_trend": -0.0008919998103415021,
+    "makespan_variance": 0.022985214717349205,
+    "stability_score": 0.9268555839956005,
+    "current_exploration_noise": 0.009417504025116815,
+    "trend_direction": "stable",
+    "stagnation_counter": 0,
+    "buffer_utilization": 0.72655,
+    "optimization_progress": {
+      "improving": "False",
+      "stable": "True",
+      "converged": 0
+    },
+    "current_lr": 8e-07,
+    "convergence_monitor": {
+      "early_stop": 0,
+      "best_score": 1.2474330002946439,
+      "patience_counter": 42,
+      "improvement_trend": 0
+    }
+  },
+  "buffer_status": {
+    "buffer_sizes": {
+      "meta": 8072,
+      "FPGA": 642,
+      "FOG_GPU": 3333,
+      "CLOUD": 2484
+    },
+    "capacity_utilization": {
+      "meta": 0.8072,
+      "FPGA": 0.1926192619261926,
+      "FOG_GPU": 1.0,
+      "CLOUD": 0.7452745274527453
+    },
+    "quality_stats": {
+      "total_experiences": 16144,
+      "filtered_experiences": 0,
+      "filter_rate": 0.0,
+      "meta_avg_quality": 0.9987030986670715,
+      "sub_avg_qualities": {
+        "FPGA": 0.9828355073746525,
+        "FOG_GPU": 0.9987936437233852,
+        "CLOUD": 0.9862455688033657
+      }
+    },
+    "sampling_stats": {
+      "meta_samples": 120,
+      "sub_samples": {
+        "FPGA": 120,
+        "FOG_GPU": 120,
+        "CLOUD": 120
+      },
+      "quality_filtered": 0,
+      "last_sample_time": 1753690125.117039
+    },
+    "configuration": {
+      "enable_per": 1,
+      "quality_threshold": 0.08,
+      "balance_sampling": 1
+    }
+  },
+  "evaluation_duration": 0.0,
+  "timestamp": "2025-07-28T16:08:45.333040"
+}

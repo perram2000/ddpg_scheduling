@@ -1,0 +1,10 @@
+[2025-07-24 22:39:46] Episode    1 | Reward:   370.83 | Makespan:   2.39 | LoadBalance: 0.580 | Duration: 1.12s
+[2025-07-24 22:39:47] Episode    2 | Reward:   310.38 | Makespan:   1.84 | LoadBalance: 0.485 | Duration: 0.80s
+[2025-07-24 22:39:48] Episode    3 | Reward:   349.26 | Makespan:   2.22 | LoadBalance: 0.550 | Duration: 0.82s
+[2025-07-24 22:39:49] Episode    4 | Reward:   258.73 | Makespan:   1.64 | LoadBalance: 0.476 | Duration: 0.68s
+[2025-07-24 22:39:49] Episode    5 | Reward:   352.13 | Makespan:   2.12 | LoadBalance: 0.463 | Duration: 0.76s
+[2025-07-24 22:39:50] Episode    6 | Reward:   317.21 | Makespan:   2.16 | LoadBalance: 0.495 | Duration: 0.75s
+[2025-07-24 22:39:51] Episode    7 | Reward:   317.57 | Makespan:   2.69 | LoadBalance: 0.489 | Duration: 0.76s
+[2025-07-24 22:39:52] Episode    8 | Reward:   284.92 | Makespan:   1.72 | LoadBalance: 0.498 | Duration: 0.67s
+[2025-07-24 22:39:52] Episode    9 | Reward:   259.29 | Makespan:   2.10 | LoadBalance: 0.502 | Duration: 0.68s
+[2025-07-24 22:39:53] Episode   10 | Reward:   260.29 | Makespan:   2.34 | LoadBalance: 0.488 | Duration: 0.66s

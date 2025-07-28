@@ -1,0 +1,1 @@
+[2025-07-24 21:10:58] Episode    1 | Reward:     2.70 | Makespan:    inf | LoadBalance: 0.471 | Duration: 0.29s

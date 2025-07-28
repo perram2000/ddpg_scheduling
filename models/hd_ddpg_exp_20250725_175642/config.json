@@ -1,0 +1,17 @@
+{
+  "episodes": 100,
+  "workflows_per_episode": 5,
+  "batch_size": 64,
+  "learning_rate": 0.0005,
+  "min_workflow_size": 5,
+  "max_workflow_size": 15,
+  "failure_rate": 0.01,
+  "save_interval": 25,
+  "eval_interval": 20,
+  "load_model": null,
+  "save_dir": "models",
+  "experiment_name": "hd_ddpg_exp_20250725_175642",
+  "seed": 42,
+  "gpu": false,
+  "verbose": false
+}

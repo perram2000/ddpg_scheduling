@@ -1,0 +1,5 @@
+[2025-07-24 22:10:49] Episode    1 | Reward:    30.00 | Makespan:   2.40 | LoadBalance: 0.511 | Duration: 0.92s
+[2025-07-24 22:10:50] Episode    2 | Reward:    30.00 | Makespan:   1.84 | LoadBalance: 0.433 | Duration: 0.52s
+[2025-07-24 22:10:51] Episode    3 | Reward:    30.00 | Makespan:   3.67 | LoadBalance: 0.503 | Duration: 0.66s
+[2025-07-24 22:10:51] Episode    4 | Reward:    30.00 | Makespan:   2.57 | LoadBalance: 0.563 | Duration: 0.57s
+[2025-07-24 22:10:52] Episode    5 | Reward:    30.00 | Makespan:   2.86 | LoadBalance: 0.467 | Duration: 0.57s

@@ -1,0 +1,76 @@
+{
+  "episode": 280,
+  "recent_performance": {
+    "avg_reward": 1372.1208396627417,
+    "std_reward": 93.56415404988178,
+    "avg_makespan": 1.4242784042801993,
+    "std_makespan": 0.18760380885518663,
+    "avg_load_balance": 1.9323493891188344,
+    "reward_trend": -0.29960640208111833,
+    "makespan_stability": 0.9660013981250481
+  },
+  "optimization_status": {
+    "episode": 280,
+    "makespan_trend": -0.002038125428937659,
+    "makespan_variance": 0.036851942576798795,
+    "stability_score": 0.8768389187660157,
+    "current_exploration_noise": 0.00869327798247094,
+    "trend_direction": "stable",
+    "stagnation_counter": 1,
+    "buffer_utilization": 0.88435,
+    "optimization_progress": {
+      "improving": "False",
+      "stable": "True",
+      "converged": 0
+    },
+    "current_lr": 5e-06,
+    "convergence_monitor": {
+      "early_stop": 0,
+      "best_score": 1.0408364531178125,
+      "patience_counter": 82,
+      "improvement_trend": 0
+    }
+  },
+  "buffer_status": {
+    "buffer_sizes": {
+      "meta": 10000,
+      "FPGA": 1021,
+      "FOG_GPU": 3333,
+      "CLOUD": 3333
+    },
+    "capacity_utilization": {
+      "meta": 1.0,
+      "FPGA": 0.3063306330633063,
+      "FOG_GPU": 1.0,
+      "CLOUD": 1.0
+    },
+    "quality_stats": {
+      "total_experiences": 38868,
+      "filtered_experiences": 0,
+      "filter_rate": 0.0,
+      "meta_avg_quality": 0.9982408050752172,
+      "sub_avg_qualities": {
+        "FPGA": 0.9845367832884907,
+        "FOG_GPU": 0.9983425696364004,
+        "CLOUD": 0.9843608968664332
+      }
+    },
+    "sampling_stats": {
+      "meta_samples": 280,
+      "sub_samples": {
+        "FPGA": 280,
+        "FOG_GPU": 280,
+        "CLOUD": 280
+      },
+      "quality_filtered": 0,
+      "last_sample_time": 1753690370.5928922
+    },
+    "configuration": {
+      "enable_per": 1,
+      "quality_threshold": 0.08,
+      "balance_sampling": 1
+    }
+  },
+  "evaluation_duration": 0.001001119613647461,
+  "timestamp": "2025-07-28T16:12:50.811881"
+}

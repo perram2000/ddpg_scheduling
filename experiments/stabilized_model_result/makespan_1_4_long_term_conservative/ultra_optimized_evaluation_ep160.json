@@ -1,0 +1,76 @@
+{
+  "episode": 160,
+  "recent_performance": {
+    "avg_reward": 1322.7628467488971,
+    "std_reward": 92.54969462697183,
+    "avg_makespan": 1.478061254309285,
+    "std_makespan": 0.1523498813638204,
+    "avg_load_balance": 1.927972517021476,
+    "reward_trend": -0.48334250415450153,
+    "makespan_stability": 0.9773160198598717
+  },
+  "optimization_status": {
+    "episode": 160,
+    "makespan_trend": -0.0024777766990977082,
+    "makespan_variance": 0.020845623507416023,
+    "stability_score": 0.922628623174468,
+    "current_exploration_noise": 0.00923097878088045,
+    "trend_direction": "stable",
+    "stagnation_counter": 2,
+    "buffer_utilization": 0.8699,
+    "optimization_progress": {
+      "improving": "False",
+      "stable": "True",
+      "converged": 0
+    },
+    "current_lr": 8e-07,
+    "convergence_monitor": {
+      "early_stop": 0,
+      "best_score": 1.2110440919846028,
+      "patience_counter": 28,
+      "improvement_trend": 0
+    }
+  },
+  "buffer_status": {
+    "buffer_sizes": {
+      "meta": 10000,
+      "FPGA": 732,
+      "FOG_GPU": 3333,
+      "CLOUD": 3333
+    },
+    "capacity_utilization": {
+      "meta": 1.0,
+      "FPGA": 0.21962196219621963,
+      "FOG_GPU": 1.0,
+      "CLOUD": 1.0
+    },
+    "quality_stats": {
+      "total_experiences": 21782,
+      "filtered_experiences": 0,
+      "filter_rate": 0.0,
+      "meta_avg_quality": 0.998756912831511,
+      "sub_avg_qualities": {
+        "FPGA": 0.9829794447826715,
+        "FOG_GPU": 0.9976194616345309,
+        "CLOUD": 0.9857855718158287
+      }
+    },
+    "sampling_stats": {
+      "meta_samples": 160,
+      "sub_samples": {
+        "FPGA": 160,
+        "FOG_GPU": 160,
+        "CLOUD": 160
+      },
+      "quality_filtered": 0,
+      "last_sample_time": 1753690186.7358842
+    },
+    "configuration": {
+      "enable_per": 1,
+      "quality_threshold": 0.08,
+      "balance_sampling": 1
+    }
+  },
+  "evaluation_duration": 0.0,
+  "timestamp": "2025-07-28T16:09:46.944883"
+}

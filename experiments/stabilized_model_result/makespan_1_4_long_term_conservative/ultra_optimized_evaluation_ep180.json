@@ -1,0 +1,76 @@
+{
+  "episode": 180,
+  "recent_performance": {
+    "avg_reward": 1308.9199922775142,
+    "std_reward": 87.2415443701872,
+    "avg_makespan": 1.4784290910037219,
+    "std_makespan": 0.16509744541641141,
+    "avg_load_balance": 1.9262277131876968,
+    "reward_trend": 2.252992015256922,
+    "makespan_stability": 0.9734660731778156
+  },
+  "optimization_status": {
+    "episode": 180,
+    "makespan_trend": 0.00040523088857591957,
+    "makespan_variance": 0.025727184160488737,
+    "stability_score": 0.9048954988318422,
+    "current_exploration_noise": 0.009139106151940059,
+    "trend_direction": "stable",
+    "stagnation_counter": 0,
+    "buffer_utilization": 0.87225,
+    "optimization_progress": {
+      "improving": "False",
+      "stable": "True",
+      "converged": 0
+    },
+    "current_lr": 5e-06,
+    "convergence_monitor": {
+      "early_stop": 0,
+      "best_score": 1.1068890643594658,
+      "patience_counter": 7,
+      "improvement_trend": 0
+    }
+  },
+  "buffer_status": {
+    "buffer_sizes": {
+      "meta": 10000,
+      "FPGA": 779,
+      "FOG_GPU": 3333,
+      "CLOUD": 3333
+    },
+    "capacity_utilization": {
+      "meta": 1.0,
+      "FPGA": 0.23372337233723373,
+      "FOG_GPU": 1.0,
+      "CLOUD": 1.0
+    },
+    "quality_stats": {
+      "total_experiences": 24570,
+      "filtered_experiences": 0,
+      "filter_rate": 0.0,
+      "meta_avg_quality": 0.9984066719366412,
+      "sub_avg_qualities": {
+        "FPGA": 0.9831574487250219,
+        "FOG_GPU": 0.9979325950938652,
+        "CLOUD": 0.9863144320107565
+      }
+    },
+    "sampling_stats": {
+      "meta_samples": 180,
+      "sub_samples": {
+        "FPGA": 180,
+        "FOG_GPU": 180,
+        "CLOUD": 180
+      },
+      "quality_filtered": 0,
+      "last_sample_time": 1753690217.2406466
+    },
+    "configuration": {
+      "enable_per": 1,
+      "quality_threshold": 0.08,
+      "balance_sampling": 1
+    }
+  },
+  "evaluation_duration": 0.0,
+  "timestamp": "2025-07-28T16:10:17.458776"
+}

@@ -1,0 +1,40 @@
+{
+  "buffer_sizes": {
+    "meta": 5000,
+    "FPGA": 1666,
+    "FOG_GPU": 863,
+    "CLOUD": 1666
+  },
+  "capacity_utilization": {
+    "meta": 1.0,
+    "FPGA": 1.0,
+    "FOG_GPU": 0.5180072028811524,
+    "CLOUD": 1.0
+  },
+  "quality_stats": {
+    "total_experiences": 12264,
+    "filtered_experiences": 0,
+    "filter_rate": 0.0,
+    "meta_avg_quality": 0.9982522930936564,
+    "sub_avg_qualities": {
+      "FPGA": 0.9820797537428323,
+      "FOG_GPU": 0.9981007780092717,
+      "CLOUD": 0.9854512682576819
+    }
+  },
+  "sampling_stats": {
+    "meta_samples": 120,
+    "sub_samples": {
+      "FPGA": 120,
+      "FOG_GPU": 120,
+      "CLOUD": 120
+    },
+    "quality_filtered": 0,
+    "last_sample_time": 1753686440.1780639
+  },
+  "configuration": {
+    "enable_per": 1,
+    "quality_threshold": 0.08,
+    "balance_sampling": 1
+  }
+}

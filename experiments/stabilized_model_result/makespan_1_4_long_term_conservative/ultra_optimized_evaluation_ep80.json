@@ -1,0 +1,76 @@
+{
+  "episode": 80,
+  "recent_performance": {
+    "avg_reward": 1225.7774799985739,
+    "std_reward": 109.7610940499272,
+    "avg_makespan": 1.6277547094889933,
+    "std_makespan": 0.17759523891056334,
+    "avg_load_balance": 1.9253350428509455,
+    "reward_trend": 0.19378465627474467,
+    "makespan_stability": 0.9694242910817495
+  },
+  "optimization_status": {
+    "episode": 80,
+    "makespan_trend": -0.004273516587171439,
+    "makespan_variance": 0.031109745245126948,
+    "stability_score": 0.9201642066041489,
+    "current_exploration_noise": 0.009607798281021748,
+    "trend_direction": "stable",
+    "stagnation_counter": 0,
+    "buffer_utilization": 0.5266,
+    "optimization_progress": {
+      "improving": "False",
+      "stable": "True",
+      "converged": 0
+    },
+    "current_lr": 8e-07,
+    "convergence_monitor": {
+      "early_stop": 0,
+      "best_score": 1.2474330002946439,
+      "patience_counter": 2,
+      "improvement_trend": 0
+    }
+  },
+  "buffer_status": {
+    "buffer_sizes": {
+      "meta": 5289,
+      "FPGA": 507,
+      "FOG_GPU": 3333,
+      "CLOUD": 1403
+    },
+    "capacity_utilization": {
+      "meta": 0.5289,
+      "FPGA": 0.15211521152115212,
+      "FOG_GPU": 1.0,
+      "CLOUD": 0.42094209420942097
+    },
+    "quality_stats": {
+      "total_experiences": 10578,
+      "filtered_experiences": 0,
+      "filter_rate": 0.0,
+      "meta_avg_quality": 0.9978256045846594,
+      "sub_avg_qualities": {
+        "FPGA": 0.9831836013852133,
+        "FOG_GPU": 0.9989206881756899,
+        "CLOUD": 0.9831450787345397
+      }
+    },
+    "sampling_stats": {
+      "meta_samples": 80,
+      "sub_samples": {
+        "FPGA": 80,
+        "FOG_GPU": 80,
+        "CLOUD": 80
+      },
+      "quality_filtered": 0,
+      "last_sample_time": 1753690064.8955324
+    },
+    "configuration": {
+      "enable_per": 1,
+      "quality_threshold": 0.08,
+      "balance_sampling": 1
+    }
+  },
+  "evaluation_duration": 0.0,
+  "timestamp": "2025-07-28T16:07:45.111538"
+}

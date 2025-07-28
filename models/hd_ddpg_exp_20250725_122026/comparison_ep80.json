@@ -1,0 +1,34 @@
+{
+  "HD-DDPG": {
+    "avg_makespan": 2.148631847766636,
+    "std_makespan": 0.8945297892416962,
+    "avg_load_balance": 0.500053445027813,
+    "std_load_balance": 0.0711557860139469,
+    "avg_energy": 1199.6000689669543,
+    "std_energy": 504.1459068574785
+  },
+  "HEFT": {
+    "avg_makespan": 0.16180158773945177,
+    "std_makespan": 0.028212340158001253,
+    "avg_load_balance": 0.2898979485566356,
+    "std_load_balance": 4.370952418903846e-17,
+    "avg_energy": 1812.3343744325266,
+    "std_energy": 607.9080390373408
+  },
+  "FCFS": {
+    "avg_makespan": 0.821541904696112,
+    "std_makespan": 0.1909184322220313,
+    "avg_load_balance": 0.28989794855663564,
+    "std_load_balance": 4.227603326225575e-17,
+    "avg_energy": 163.84086618251695,
+    "std_energy": 45.203738507907545
+  },
+  "Random": {
+    "avg_makespan": 0.6697408626616611,
+    "std_makespan": 0.3134489698100396,
+    "avg_load_balance": 0.48964291456060205,
+    "std_load_balance": 0.059612834056605196,
+    "avg_energy": 1130.0283638124718,
+    "std_energy": 441.5217797245335
+  }
+}

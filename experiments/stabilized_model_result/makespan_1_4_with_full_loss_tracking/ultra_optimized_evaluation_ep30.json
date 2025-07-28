@@ -1,0 +1,76 @@
+{
+  "episode": 30,
+  "recent_performance": {
+    "avg_reward": 1191.45451881748,
+    "std_reward": 78.99773001939212,
+    "avg_makespan": 1.9592308905896756,
+    "std_makespan": 0.16812673391208638,
+    "avg_load_balance": 1.9525257579791055,
+    "reward_trend": 4.361762002333463,
+    "makespan_stability": 0.9725104377669244
+  },
+  "optimization_status": {
+    "episode": 30,
+    "makespan_trend": -0.0012626612956095167,
+    "makespan_variance": 0.028266598655945496,
+    "stability_score": 0.956300356560117,
+    "current_exploration_noise": 0.009851082442083704,
+    "trend_direction": "stable",
+    "stagnation_counter": 0,
+    "buffer_utilization": 0.3358333333333333,
+    "optimization_progress": {
+      "improving": "False",
+      "stable": "True",
+      "converged": 0
+    },
+    "current_lr": 1.6e-06,
+    "convergence_monitor": {
+      "early_stop": 0,
+      "best_score": 1.6572701644507197,
+      "patience_counter": 17,
+      "improvement_trend": 0
+    }
+  },
+  "buffer_status": {
+    "buffer_sizes": {
+      "meta": 2015,
+      "FPGA": 448,
+      "FOG_GPU": 1068,
+      "CLOUD": 499
+    },
+    "capacity_utilization": {
+      "meta": 0.3358333333333333,
+      "FPGA": 0.224,
+      "FOG_GPU": 0.534,
+      "CLOUD": 0.2495
+    },
+    "quality_stats": {
+      "total_experiences": 4030,
+      "filtered_experiences": 0,
+      "filter_rate": 0.0,
+      "meta_avg_quality": 0.9984858702274069,
+      "sub_avg_qualities": {
+        "FPGA": 0.9839990517164471,
+        "FOG_GPU": 0.9983068548850402,
+        "CLOUD": 0.9851351666544514
+      }
+    },
+    "sampling_stats": {
+      "meta_samples": 30,
+      "sub_samples": {
+        "FPGA": 30,
+        "FOG_GPU": 30,
+        "CLOUD": 30
+      },
+      "quality_filtered": 0,
+      "last_sample_time": 1753689744.299221
+    },
+    "configuration": {
+      "enable_per": 1,
+      "quality_threshold": 0.08,
+      "balance_sampling": 1
+    }
+  },
+  "evaluation_duration": 0.0010099411010742188,
+  "timestamp": "2025-07-28T16:02:24.514248"
+}

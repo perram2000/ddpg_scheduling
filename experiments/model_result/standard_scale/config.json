@@ -1,0 +1,20 @@
+{
+  "episodes": 200,
+  "workflows_per_episode": 8,
+  "batch_size": 16,
+  "learning_rate": 0.0001,
+  "min_workflow_size": 5,
+  "max_workflow_size": 10,
+  "failure_rate": 0.01,
+  "save_interval": 50,
+  "eval_interval": 25,
+  "load_model": null,
+  "save_dir": "model_result",
+  "experiment_name": "standard_scale",
+  "seed": 42,
+  "verbose": true,
+  "cpu_threads": 0,
+  "memory_limit": 4096,
+  "training_mode": "CPU_OPTIMIZED",
+  "tensorflow_version": "2.19.0"
+}

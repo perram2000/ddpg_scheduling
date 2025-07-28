@@ -1,0 +1,20 @@
+{
+  "episodes": 1000,
+  "workflows_per_episode": 8,
+  "batch_size": 16,
+  "learning_rate": 5e-05,
+  "min_workflow_size": 5,
+  "max_workflow_size": 12,
+  "failure_rate": 0.01,
+  "save_interval": 200,
+  "eval_interval": 100,
+  "load_model": null,
+  "save_dir": "model_result",
+  "experiment_name": "long_convergence",
+  "seed": 42,
+  "verbose": true,
+  "cpu_threads": 0,
+  "memory_limit": 4096,
+  "training_mode": "CPU_OPTIMIZED",
+  "tensorflow_version": "2.19.0"
+}

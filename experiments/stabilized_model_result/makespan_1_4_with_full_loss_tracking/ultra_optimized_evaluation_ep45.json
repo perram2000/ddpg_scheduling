@@ -1,0 +1,76 @@
+{
+  "episode": 45,
+  "recent_performance": {
+    "avg_reward": 1256.2681301891955,
+    "std_reward": 86.57812749700739,
+    "avg_makespan": 1.89995876901148,
+    "std_makespan": 0.21853822950227936,
+    "avg_load_balance": 1.95334360733166,
+    "reward_trend": 2.0168263797322123,
+    "makespan_stability": 0.9544179914659298
+  },
+  "optimization_status": {
+    "episode": 45,
+    "makespan_trend": -0.004152007202371842,
+    "makespan_variance": 0.039059203059937216,
+    "stability_score": 0.9544596786849626,
+    "current_exploration_noise": 0.00977745735524137,
+    "trend_direction": "improving",
+    "stagnation_counter": 0,
+    "buffer_utilization": 0.5123333333333333,
+    "optimization_progress": {
+      "improving": "False",
+      "stable": "True",
+      "converged": 0
+    },
+    "current_lr": 1.6e-06,
+    "convergence_monitor": {
+      "early_stop": 0,
+      "best_score": 1.4039250435256885,
+      "patience_counter": 0,
+      "improvement_trend": 0
+    }
+  },
+  "buffer_status": {
+    "buffer_sizes": {
+      "meta": 3074,
+      "FPGA": 660,
+      "FOG_GPU": 1598,
+      "CLOUD": 816
+    },
+    "capacity_utilization": {
+      "meta": 0.5123333333333333,
+      "FPGA": 0.33,
+      "FOG_GPU": 0.799,
+      "CLOUD": 0.408
+    },
+    "quality_stats": {
+      "total_experiences": 6148,
+      "filtered_experiences": 0,
+      "filter_rate": 0.0,
+      "meta_avg_quality": 0.9991908670620095,
+      "sub_avg_qualities": {
+        "FPGA": 0.9821163406601209,
+        "FOG_GPU": 0.9982085391621663,
+        "CLOUD": 0.9833239429022608
+      }
+    },
+    "sampling_stats": {
+      "meta_samples": 45,
+      "sub_samples": {
+        "FPGA": 45,
+        "FOG_GPU": 45,
+        "CLOUD": 45
+      },
+      "quality_filtered": 0,
+      "last_sample_time": 1753689766.4766562
+    },
+    "configuration": {
+      "enable_per": 1,
+      "quality_threshold": 0.08,
+      "balance_sampling": 1
+    }
+  },
+  "evaluation_duration": 0.0,
+  "timestamp": "2025-07-28T16:02:46.687918"
+}

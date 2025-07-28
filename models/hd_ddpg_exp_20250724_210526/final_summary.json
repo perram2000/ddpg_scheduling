@@ -1,0 +1,23 @@
+{
+  "total_episodes": 0,
+  "average_reward_recent_100": 0,
+  "average_makespan_recent_100": 0,
+  "average_load_balance_recent_100": 0,
+  "training_history": {
+    "meta_critic_loss": [],
+    "meta_actor_loss": [],
+    "sub_critic_losses": {
+      "FPGA": [],
+      "FOG_GPU": [],
+      "CLOUD": []
+    },
+    "sub_actor_losses": {
+      "FPGA": [],
+      "FOG_GPU": [],
+      "CLOUD": []
+    },
+    "episode_rewards": [],
+    "makespans": [],
+    "load_balances": []
+  }
+}

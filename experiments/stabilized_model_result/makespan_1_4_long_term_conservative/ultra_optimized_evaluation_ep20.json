@@ -1,0 +1,76 @@
+{
+  "episode": 20,
+  "recent_performance": {
+    "avg_reward": 1172.4440101768578,
+    "std_reward": 113.45590885988724,
+    "avg_makespan": 1.7348300632686748,
+    "std_makespan": 0.2383598455386367,
+    "avg_load_balance": 1.9324641206766113,
+    "reward_trend": -1.1692261193395235,
+    "makespan_stability": 0.9462390355904181
+  },
+  "optimization_status": {
+    "episode": 20,
+    "makespan_trend": 0.014086037066310592,
+    "makespan_variance": 0.05681541596520275,
+    "stability_score": 0.9629184086908442,
+    "current_exploration_noise": 0.009900473578023298,
+    "trend_direction": "degrading",
+    "stagnation_counter": 1,
+    "buffer_utilization": 0.1315,
+    "optimization_progress": {
+      "improving": "False",
+      "stable": "True",
+      "converged": 0
+    },
+    "current_lr": 8e-07,
+    "convergence_monitor": {
+      "early_stop": 0,
+      "best_score": 1.3678386039354655,
+      "patience_counter": 18,
+      "improvement_trend": 0
+    }
+  },
+  "buffer_status": {
+    "buffer_sizes": {
+      "meta": 1315,
+      "FPGA": 167,
+      "FOG_GPU": 861,
+      "CLOUD": 287
+    },
+    "capacity_utilization": {
+      "meta": 0.1315,
+      "FPGA": 0.0501050105010501,
+      "FOG_GPU": 0.2583258325832583,
+      "CLOUD": 0.08610861086108611
+    },
+    "quality_stats": {
+      "total_experiences": 2630,
+      "filtered_experiences": 0,
+      "filter_rate": 0.0,
+      "meta_avg_quality": 0.998490340501347,
+      "sub_avg_qualities": {
+        "FPGA": 0.9849224052774359,
+        "FOG_GPU": 0.997920966999358,
+        "CLOUD": 0.9855343596557544
+      }
+    },
+    "sampling_stats": {
+      "meta_samples": 20,
+      "sub_samples": {
+        "FPGA": 20,
+        "FOG_GPU": 20,
+        "CLOUD": 20
+      },
+      "quality_filtered": 0,
+      "last_sample_time": 1753689975.82831
+    },
+    "configuration": {
+      "enable_per": 1,
+      "quality_threshold": 0.08,
+      "balance_sampling": 1
+    }
+  },
+  "evaluation_duration": 0.0,
+  "timestamp": "2025-07-28T16:06:16.052966"
+}
