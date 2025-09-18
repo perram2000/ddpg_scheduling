@@ -1,12 +1,8 @@
 """
-Medical Workflow Generator - 高效优化版本
+Medical Workflow Generator 
 医疗工作流生成器 - 配合优化算法，提升生成效率
 
-主要优化：
 - 优化工作流生成算法，减少计算开销
-- 简化任务类型和属性定义
-- 与优化后的算法和环境适配
-- 提升生成效率和内存使用
 """
 
 import numpy as np
@@ -18,7 +14,7 @@ from typing import List, Dict, Tuple, Optional
 
 @dataclass
 class OptimizedMedicalTask:
-    """🚀 优化的医疗任务类 - 简化版本"""
+
     task_id: str
     task_type: str
     computation_requirement: float  # MIPS
@@ -30,7 +26,7 @@ class OptimizedMedicalTask:
     in_edges: List[Tuple[str, float]] = field(default_factory=list)  # [(pred_id, size_mb)]
     out_edges: List[Tuple[str, float]] = field(default_factory=list)  # [(succ_id, size_mb)]
 
-    # 🚀 简化属性 - 移除不常用的数据大小和截止时间
+
     def __post_init__(self):
         # 确保数值在合理范围内
         self.computation_requirement = max(0.1, self.computation_requirement)
@@ -39,12 +35,12 @@ class OptimizedMedicalTask:
 
 
 class OptimizedMedicalWorkflowGenerator:
-    """🚀 优化的医疗工作流生成器"""
+
 
     def __init__(self):
         print("INFO: Initializing OptimizedMedicalWorkflowGenerator...")
 
-        # 🚀 简化的任务类型定义 - 只保留核心类型
+       #任务类型定义 
         self.task_types = {
             'IMAGE_PROCESSING': {
                 'computation_range': (0.8, 2.5),      # 相对计算需求
@@ -117,7 +113,7 @@ class OptimizedMedicalWorkflowGenerator:
 
         print("INFO: Optimized workflow generator initialized")
 
-        # === 新增：按难度生成工作流 ===
+        # ===按难度生成工作流 ===
 
     def generate_workflow_with_difficulty(self, difficulty: str = 'EASY',
                                           workflow_type: str = 'general',
@@ -294,12 +290,12 @@ class OptimizedMedicalWorkflowGenerator:
 
 
     def _generate_task_sequence(self, num_tasks: int, template: Dict) -> List[str]:
-        """🚀 生成任务类型序列"""
+        """生成任务类型序列"""
         try:
             distribution = template['task_distribution']
             task_types = []
 
-            # 🚀 基于分布概率生成任务类型
+            #基于分布概率生成任务类型
             for _ in range(num_tasks):
                 rand_val = random.random()
                 cumulative_prob = 0.0
@@ -313,7 +309,7 @@ class OptimizedMedicalWorkflowGenerator:
                     # 如果没有匹配到，使用默认类型
                     task_types.append('DATA_ANALYSIS')
 
-            # 🚀 确保工作流的合理性 - 至少有一个查询和一个处理任务
+            # 确保工作流的合理性 - 至少有一个查询和一个处理任务
             if num_tasks >= 3:
                 if 'DATABASE_QUERY' not in task_types:
                     task_types[0] = 'DATABASE_QUERY'  # 开始通常是查询
@@ -360,7 +356,7 @@ class OptimizedMedicalWorkflowGenerator:
         try:
             dependencies = [[] for _ in range(num_tasks)]
 
-            # 🚀 简化的依赖策略：主要是顺序依赖 + 少量并行
+            # 依赖策略：主要是顺序依赖 + 少量并行
             for i in range(1, num_tasks):
                 # 70%概率依赖前一个任务
                 if random.random() < 0.7:
@@ -376,7 +372,7 @@ class OptimizedMedicalWorkflowGenerator:
             return dependencies
 
         except Exception:
-            # 返回简单的顺序依赖
+            # 返回顺序依赖
             dependencies = [[] for _ in range(num_tasks)]
             for i in range(1, num_tasks):
                 dependencies[i] = [f"task_{i-1}"]
@@ -384,24 +380,24 @@ class OptimizedMedicalWorkflowGenerator:
 
     def _create_optimized_task(self, task_id: str, task_type: str,
                              dependencies: List[str], template: Dict) -> OptimizedMedicalTask:
-        """🚀 创建优化的医疗任务"""
+   
         try:
             task_spec = self.task_types[task_type]
             complexity_factor = template.get('complexity_factor', 1.0)
 
-            # 🚀 生成任务属性 - 考虑复杂度因子
+            # 生成任务属性 - 考虑复杂度因子
             comp_range = task_spec['computation_range']
             computation = random.uniform(*comp_range) * complexity_factor
 
             mem_range = task_spec['memory_range']
             memory = random.uniform(*mem_range) * complexity_factor
 
-            # 🚀 设置优先级 - 基于任务类型 + 随机变化
+            #设置优先级 - 基于任务类型 + 随机变化
             base_priority = task_spec['base_priority']
             priority = base_priority + random.randint(-1, 1)
             priority = max(1, min(5, priority))
 
-            # 🚀 调整依赖关系ID格式
+            # 调整依赖关系ID格式
             adjusted_dependencies = []
             for dep in dependencies:
                 if isinstance(dep, str):
@@ -431,7 +427,7 @@ class OptimizedMedicalWorkflowGenerator:
             )
 
     def _create_fallback_workflow(self, num_tasks: int, workflow_type: str) -> List[OptimizedMedicalTask]:
-        """🚀 创建备用工作流"""
+        """创建备用工作流"""
         tasks = []
         task_types = ['DATABASE_QUERY', 'IMAGE_PROCESSING', 'ML_INFERENCE', 'DATA_ANALYSIS', 'REPORT_GENERATION']
 
@@ -439,12 +435,12 @@ class OptimizedMedicalWorkflowGenerator:
             task_type = task_types[i % len(task_types)]
             task_id = f"{workflow_type}_{num_tasks}_fallback_{i}"
 
-            # 简单的计算需求
+            # 计算需求
             computation = random.uniform(0.5, 2.0)
             memory = random.uniform(8, 25)
             priority = random.randint(2, 4)
 
-            # 简单的顺序依赖
+            # 顺序依赖
             dependencies = [f"fallback_{i-1}"] if i > 0 else []
 
             task = OptimizedMedicalTask(
@@ -469,7 +465,7 @@ class OptimizedMedicalWorkflowGenerator:
             min_size, max_size = size_range
 
             for i in range(batch_size):
-                # 🚀 快速选择工作流类型和大小
+             
                 workflow_type = workflow_types[i % len(workflow_types)]
                 num_tasks = random.randint(min_size, max_size)
 
@@ -480,7 +476,7 @@ class OptimizedMedicalWorkflowGenerator:
 
         except Exception as e:
             print(f"WARNING: Batch workflow generation failed: {e}")
-            # 返回简化的默认批次
+            # 返回默认批次
             return [self._create_fallback_workflow(8, 'general') for _ in range(batch_size)]
 
     def get_workflow_stats(self, workflow: List[OptimizedMedicalTask]) -> Dict:
@@ -512,12 +508,12 @@ class OptimizedMedicalWorkflowGenerator:
             return {'error': f'Stats calculation failed: {e}'}
 
     def validate_workflow(self, workflow: List[OptimizedMedicalTask]) -> bool:
-        """🚀 验证工作流的有效性"""
+  
         try:
             if not workflow:
                 return False
 
-            # 🚀 基本验证
+            # 基本验证
             task_ids = set()
             for task in workflow:
                 # 检查任务ID唯一性
@@ -531,8 +527,7 @@ class OptimizedMedicalWorkflowGenerator:
                     task.priority < 1 or task.priority > 5):
                     return False
 
-            # 🚀 简化的依赖关系验证
-            # 确保依赖的任务存在（简化检查）
+            # 确保依赖的任务存在
             for task in workflow:
                 for dep in task.dependencies:
                     # 基本的存在性检查
@@ -546,11 +541,11 @@ class OptimizedMedicalWorkflowGenerator:
             return False
 
     def create_simple_workflow(self, size: int, workflow_type: str, workflow_id: str) -> List[OptimizedMedicalTask]:
-        """🚀 创建简单工作流 - 用于快速测试"""
+        """工作流 - 用于快速测试"""
         try:
             tasks = []
 
-            # 🚀 简化的任务类型分配
+       
             if workflow_type == 'radiology':
                 base_types = ['DATABASE_QUERY', 'IMAGE_PROCESSING', 'ML_INFERENCE', 'DATA_ANALYSIS', 'REPORT_GENERATION']
             elif workflow_type == 'pathology':
@@ -562,7 +557,6 @@ class OptimizedMedicalWorkflowGenerator:
                 task_type = base_types[i % len(base_types)]
                 task_id = f"{workflow_id}_task_{i}"
 
-                # 🚀 简化的属性生成
                 spec = self.task_types.get(task_type, self.task_types['DATA_ANALYSIS'])
 
                 computation = random.uniform(*spec['computation_range'])
@@ -583,7 +577,7 @@ class OptimizedMedicalWorkflowGenerator:
             return tasks
 
         except Exception:
-            # 超简化的备用方案
+          
             return [
                 OptimizedMedicalTask(
                     task_id=f"{workflow_id}_simple_{i}",
@@ -596,12 +590,12 @@ class OptimizedMedicalWorkflowGenerator:
             ]
 
 
-# 🚀 为了向后兼容，保留原始类名
+# 为了向后兼容，保留原始类名
 MedicalWorkflowGenerator = OptimizedMedicalWorkflowGenerator
 MedicalTask = OptimizedMedicalTask
 
 
-# 🧪 优化的测试函数
+#优化的测试函数
 def test_optimized_workflow_generator():
     """测试优化的工作流生成器"""
     print("INFO: Testing OptimizedMedicalWorkflowGenerator...")
@@ -694,7 +688,7 @@ def test_optimized_workflow_generator():
         return False
 
 
-# 🚀 兼容性函数：为评估脚本提供简化接口
+# 兼容性函数：为评估脚本提供简化接口
 def create_simple_workflow(size: int, workflow_type: str, workflow_id: str) -> List:
     """为外部脚本提供简化的工作流创建接口"""
     generator = OptimizedMedicalWorkflowGenerator()
