@@ -26,7 +26,7 @@ class NodeType(Enum):
 
 @dataclass
 class OptimizedComputingNode:
-    """🚀 优化的计算节点类 - 简化版本"""
+    
     node_id: int
     node_type: NodeType
     computing_power: float  # MIPS
@@ -35,7 +35,6 @@ class OptimizedComputingNode:
     energy_efficiency: float = 0.1  # W/MIPS
     availability: bool = True
 
-    # 🚀 简化的性能属性
     efficiency_score: float = 1.0
     last_update_time: float = 0.0
     available_time: float = 0.0
@@ -46,14 +45,14 @@ class OptimizedComputingNode:
         if not self.availability or self.computing_power == 0:
             return float('inf')
 
-        # 🚀 简化计算 - 基础执行时间 + 简单负载影响
+        # 基础执行时间 + 简单负载影响
         base_time = computation_requirement / self.computing_power
 
-        # 简化的负载影响（最多20%性能下降）
+        #负载影响（最多20%性能下降）
         load_ratio = self.current_load / self.memory_capacity
         load_factor = 1.0 + (load_ratio * 0.2)
 
-        # 简化的效率影响
+        #效率影响
         efficiency_factor = 0.8 + 0.4 * self.efficiency_score  # 0.8-1.2范围
 
         execution_time = base_time * load_factor / efficiency_factor
@@ -64,10 +63,10 @@ class OptimizedComputingNode:
         if execution_time == float('inf'):
             return float('inf')
 
-        # 简化能耗计算
+        # 能耗计算
         base_energy = self.computing_power * execution_time * self.energy_efficiency
 
-        # 简化的负载调整
+        # 的负载调整
         load_ratio = self.current_load / self.memory_capacity
         energy_factor = 1.0 + (load_ratio * 0.15)
 
@@ -78,12 +77,12 @@ class OptimizedComputingNode:
         if not self.availability:
             return False
 
-        # 🚀 简单容量检查（预留10%缓冲）
+     
         available_memory = self.memory_capacity * 0.9 - self.current_load
         return available_memory >= memory_requirement
 
     def update_load(self, memory_change: float, current_time: float = None):
-        """🚀 简化的负载更新"""
+       
         self.current_load += memory_change
         self.current_load = max(0, min(self.current_load, self.memory_capacity))
 
@@ -133,7 +132,7 @@ class OptimizedFogCloudEnvironment:
         except Exception:
             return float('inf'), 0.0
     """
-    🚀 优化的雾云计算环境
+    
     专为高效训练设计，减少计算开销
     """
 
@@ -142,15 +141,15 @@ class OptimizedFogCloudEnvironment:
 
         self.config = config or {}
 
-        # 🚀 初始化优化的节点架构
+    
         self.nodes = self._initialize_optimized_nodes()
         self.current_time = 0.0
         self.comm_time_multiplier = 1.0
 
-        # 🚀 简化的网络配置
+    
         self.network_latency = self._initialize_simple_network()
 
-        # 🚀 简化的监控系统 - 只保留关键指标
+        
         self.system_stats = {
             'total_nodes': sum(len(nodes) for nodes in self.nodes.values()),
             'last_health_check': 0.0,
@@ -170,7 +169,7 @@ class OptimizedFogCloudEnvironment:
             'CLOUD': []
         }
 
-        # 🚀 Edge层：4个FPGA节点 - 低功耗，低延迟
+        
         fpga_configs = [
             {'computing_power': 1000, 'memory_capacity': 2048, 'energy_efficiency': 0.05},  # 高效FPGA
             {'computing_power': 1200, 'memory_capacity': 2048, 'energy_efficiency': 0.06},  # 高性能FPGA
@@ -186,7 +185,7 @@ class OptimizedFogCloudEnvironment:
             )
             nodes['FPGA'].append(node)
 
-        # 🚀 Fog层：3个GPU节点 - 中等算力，适中延迟
+       
         fog_gpu_configs = [
             {'computing_power': 3000, 'memory_capacity': 8192, 'energy_efficiency': 0.20},  # 高性能Fog GPU
             {'computing_power': 2500, 'memory_capacity': 6144, 'energy_efficiency': 0.18},  # 标准Fog GPU
@@ -201,7 +200,7 @@ class OptimizedFogCloudEnvironment:
             )
             nodes['FOG_GPU'].append(node)
 
-        # 🚀 Cloud层：1个高性能GPU节点 - 最高算力，高延迟
+      
         cloud_config = {
             'computing_power': 8000, 'memory_capacity': 32768, 'energy_efficiency': 0.40  # 超高性能Cloud GPU
         }
@@ -216,7 +215,7 @@ class OptimizedFogCloudEnvironment:
         return nodes
 
     def _initialize_simple_network(self) -> Dict[str, float]:
-        """🚀 简化的网络延迟配置"""
+     
         return {
             # 🚀 明确的层间延迟定义
             'FPGA_TO_FOG': 40,      # Edge到Fog: 2ms
@@ -229,10 +228,10 @@ class OptimizedFogCloudEnvironment:
         }
 
     def get_available_nodes(self, node_type: str = None) -> List[OptimizedComputingNode]:
-        """🚀 高效获取可用节点"""
+ 
         try:
             if node_type:
-                # 🚀 直接返回可用节点，减少复杂筛选
+
                 return [node for node in self.nodes[node_type] if node.availability]
             else:
                 available_nodes = []
@@ -252,7 +251,7 @@ class OptimizedFogCloudEnvironment:
         return None
 
     def update_node_load(self, node_id: int, memory_change: float):
-        """🚀 高效的节点负载更新"""
+        """高效的节点负载更新"""
         try:
             node = self.get_node_by_id(node_id)
             if node:
@@ -261,15 +260,15 @@ class OptimizedFogCloudEnvironment:
             pass  # 🚀 静默处理错误，避免影响性能
 
     def get_system_state(self) -> np.ndarray:
-        """🚀 高效的系统状态计算"""
+        """高效的系统状态计算"""
         try:
             state = []
 
-            # 🚀 各层级节点状态 - 简化计算
+           
             for node_type in ['FPGA', 'FOG_GPU', 'CLOUD']:
                 nodes = self.nodes[node_type]
                 if nodes:
-                    # 🚀 只计算关键指标
+                 
                     avg_load = np.mean([node.current_load / node.memory_capacity for node in nodes])
                     avg_availability = np.mean([1.0 if node.availability else 0.0 for node in nodes])
                     avg_efficiency = np.mean([node.efficiency_score for node in nodes])
@@ -278,12 +277,10 @@ class OptimizedFogCloudEnvironment:
                 else:
                     state.extend([0.0, 0.0, 0.0])
 
-            # 🚀 系统整体指标 - 简化计算
             total_nodes = self.system_stats['total_nodes']
             available_nodes = len(self.get_available_nodes())
             system_availability = available_nodes / total_nodes if total_nodes > 0 else 0
 
-            # 🚀 简化的计算能力利用率
             total_power = 0
             used_power = 0
             for node_list in self.nodes.values():
@@ -294,15 +291,15 @@ class OptimizedFogCloudEnvironment:
 
             power_utilization = used_power / total_power if total_power > 0 else 0
 
-            # 🚀 简化的时间因子
+          
             time_factor = min(1.0, self.current_time / 10000)
 
-            # 🚀 系统健康度（定期更新，减少实时计算）
+            
             if self.current_time - self.system_stats['last_health_check'] > 100:  # 每100时间单位更新一次
                 self.system_stats['health_score'] = self._calculate_system_health()
                 self.system_stats['last_health_check'] = self.current_time
 
-            # 🚀 层级负载平衡度
+            # 层级负载平衡度
             layer_balance = self._calculate_layer_balance()
 
             state.extend([
@@ -322,23 +319,23 @@ class OptimizedFogCloudEnvironment:
             return np.array(state, dtype=np.float32)
 
         except Exception:
-            # 🚀 返回安全的默认状态
+            # 返回安全的默认状态
             return np.zeros(15, dtype=np.float32)
 
     def get_cluster_state(self, cluster_type: str) -> np.ndarray:
-        """🚀 高效的集群状态计算"""
+        """高效的集群状态计算"""
         try:
             nodes = self.nodes[cluster_type]
             state = []
 
-            # 🚀 节点级别状态
+            # 节点级别状态
             for node in nodes:
                 if len(state) < 4:  # 限制节点数量，避免维度过大
                     load_ratio = node.current_load / node.memory_capacity
                     availability = 1.0 if node.availability else 0.0
                     state.extend([load_ratio, availability])
 
-            # 🚀 目标维度设置（优化后的维度）
+            # 目标维度设置（优化后的维度）
             expected_dims = {
                 'FPGA': 6,    # 3个节点对 + 2个集群特征
                 'FOG_GPU': 8, # 3个节点对 + 2个集群特征
@@ -351,7 +348,7 @@ class OptimizedFogCloudEnvironment:
             while len(state) < target_dim - 2:
                 state.append(0.0)
 
-            # 🚀 集群级特征
+            # 集群级特征
             if nodes:
                 avg_load = np.mean([node.current_load / node.memory_capacity for node in nodes])
                 cluster_efficiency = np.mean([node.efficiency_score for node in nodes])
@@ -373,7 +370,7 @@ class OptimizedFogCloudEnvironment:
             return np.zeros(target_dim, dtype=np.float32)
 
     def _calculate_system_health(self) -> float:
-        """🚀 简化的系统健康度计算"""
+        """简化的系统健康度计算"""
         try:
             total_nodes = 0
             available_nodes = 0
@@ -390,7 +387,7 @@ class OptimizedFogCloudEnvironment:
             return 0.5
 
     def _calculate_layer_balance(self) -> float:
-        """🚀 计算层级间负载平衡"""
+        """计算层级间负载平衡"""
         try:
             layer_loads = []
             for layer_type, nodes in self.nodes.items():
@@ -409,7 +406,7 @@ class OptimizedFogCloudEnvironment:
             return 0.5
 
     def get_transmission_time(self, from_type: str, to_type: str, data_size: float) -> float:
-        """简化的数据传输时间计算（全局通信倍率统一生效）"""
+      
         try:
             if from_type == to_type:
                 latency = self.network_latency['INTERNAL']
@@ -466,7 +463,7 @@ class OptimizedFogCloudEnvironment:
             pass
 
     def simulate_failure(self, failure_rate: float = 0.005):
-        """🚀 简化的故障模拟"""
+      
         try:
             # 🚀 减少故障检查频率 - 每10个时间步检查一次
             if int(self.current_time) % 10 != 0:
@@ -485,7 +482,7 @@ class OptimizedFogCloudEnvironment:
             pass  # 静默处理故障模拟错误
 
     def get_environment_summary(self) -> Dict:
-        """🚀 简化的环境摘要"""
+       
         try:
             available_nodes = len(self.get_available_nodes())
             return {
