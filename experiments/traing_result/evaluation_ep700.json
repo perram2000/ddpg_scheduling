@@ -1,0 +1,10 @@
+{
+  "episode": 700,
+  "recent_performance": {
+    "avg_reward": 0,
+    "avg_makespan": Infinity,
+    "makespan_stability": 0,
+    "reward_trend": 0
+  },
+  "evaluation_duration": 0.0
+}
