@@ -1,14 +1,9 @@
 # coding: utf-8
 """
-Medical Workflow Scheduling Simulator - 高效优化版本（完整重写版）
+Medical Workflow Scheduling Simulator 
 医疗工作流调度仿真器 - 与优化算法/环境对齐，修复FCFS与Random基线公平性
 
-关键点：
-- 保持原有对外行为、函数命名、返回结构不变
-- HEFT：标准保守版（全局EFT，环境estimate_earliest_times/assign_task）
-- FCFS：依赖感知 + 事件推进 + 第一可行（不调用EFT）
-- Random：依赖感知 + 事件推进 + 随机可行（不调用EFT）
-- 训练、warmup、监控、可视化、最终报告与compare接口保持一致
+
 """
 
 import csv
@@ -47,13 +42,9 @@ class OptimizedMedicalSchedulingSimulator:
             'convergence_threshold': 0.08,
             'makespan_target': 1.2,
 
-            # CHANGE: 新增（可选）模型前缀路径
+
             'model_path': None,
-            # CHANGE: 可在这里提供训练对齐的关键权重（如果外部没传会用默认/训练值）
-            # 'eft_weight': 0.45,
-            # 'comm_weight': 0.5,
-            # 'action_smoothing': True,
-            # 'action_smoothing_alpha': 0.2,
+
         }
         if config:
             self.config.update(config)
@@ -1030,7 +1021,7 @@ class OptimizedMedicalSchedulingSimulator:
                         'energy': float(total_energy)
                     }
 
-                # epsilon-greedy 随机挑选或按“最短执行时间”挑选
+    
                 if rng.random() < epsilon:
                     chosen = rng.choice(candidates)
                     exe_t_chosen = exec_time(chosen, float(getattr(task, 'computation_requirement', 1.0)))
@@ -1173,7 +1164,7 @@ class OptimizedMedicalSchedulingSimulator:
         except Exception:
             return {'makespan': float('inf'), 'load_balance': 0.0, 'completed_tasks': 0, 'energy': 0.0}
 
-    # ===== FCFS（真实弱基线：事件推进 + 第一可行 + 非EFT） =====
+    # ===== FCFS
     def _simple_fcfs_scheduling(self, workflow: List[OptimizedMedicalTask]) -> Dict:
         import numpy as np
         try:
@@ -1355,7 +1346,7 @@ class OptimizedMedicalSchedulingSimulator:
         except Exception:
             return {'makespan': float('inf'), 'load_balance': 0.0, 'completed_tasks': 0, 'energy': 0.0}
 
-    # ===== Random（真实弱基线：事件推进 + 随机可行 + 非EFT） =====
+    # ===== Random
     def _simple_random_scheduling(self, workflow: List[OptimizedMedicalTask]) -> Dict:
         import numpy as np
         try:
